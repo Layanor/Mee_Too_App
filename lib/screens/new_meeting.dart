@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:me_too_app/widgetsFolder/mainscreen/MTextField.dart';
+import 'package:me_too_app/screens/invition_page.dart';
+import 'package:me_too_app/widgetsFolder/mainscreen/text_field.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 // ignore: depend_on_referenced_packages
 import 'package:intl/intl.dart';
@@ -151,7 +152,7 @@ class _NewMeetingState extends State<NewMeeting> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const NewMeeting()),
+                                  builder: (context) => const invition()),
                             );
                           },
                           child: const Text("Invite"),
