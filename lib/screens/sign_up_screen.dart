@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:me_too_app/screens/new_meeting.dart';
 import 'package:me_too_app/screens/sign_in_screen.dart';
 
 class SignUp extends StatelessWidget {
@@ -144,7 +145,13 @@ class SignUp extends StatelessWidget {
                       elevation: 4,
                       shadowColor: const Color(0x40000000),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const NewMeeting()),
+                      );
+                    },
                     child: const Text("Sign up"),
                   ),
                 ),

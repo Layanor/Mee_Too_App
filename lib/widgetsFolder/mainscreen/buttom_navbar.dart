@@ -5,6 +5,8 @@ class ButtomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int _selectedIndex = 0;
+
     return BottomNavigationBar(
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
